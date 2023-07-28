@@ -16,7 +16,7 @@ public class ShadowController : MonoBehaviour
         }
         else
         {
-            Vector3 targetPos = new Vector3(player.transform.position.x - 3.5f, transform.position.y, player.transform.position.z);
+            Vector3 targetPos = new Vector3(player.transform.position.x - 2.85f, player.transform.position.y, player.transform.position.z);
             transform.position = Vector3.Lerp(transform.position, targetPos, speed * Time.deltaTime);
         }
     }

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dying")]
     public int health = 3;
-    [SerializeField] private PlayerInput playerInput;
 
     void Start()
     {
@@ -35,9 +33,6 @@ public class PlayerController : MonoBehaviour
         //face correct direction
         if (!facingRight && horizontal < 0f) Flip();
         else if (facingRight && horizontal > 0f) Flip();
-
-        //disable controls when dead
-        if (health <= 0) playerInput.enabled = false;
     }
 
     public bool IsGrounded()
