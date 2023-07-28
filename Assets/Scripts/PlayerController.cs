@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,21 +18,29 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight = true;
 
-    void Update()
-    {
-        rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+    [Header("Dying")]
+    public int health = 3;
+    [SerializeField] private PlayerInput playerInput;
 
-        if (!facingRight && horizontal < 0f)
-        {
-            Flip();
-        }
-        else if (facingRight && horizontal > 0f)
-        {
-            Flip();
-        }
+    void Start()
+    {
+        health = 3;
     }
 
-    bool IsGrounded()
+    void Update()
+    {
+        //move
+        rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+
+        //face correct direction
+        if (!facingRight && horizontal < 0f) Flip();
+        else if (facingRight && horizontal > 0f) Flip();
+
+        //disable controls when dead
+        if (health <= 0) playerInput.enabled = false;
+    }
+
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
