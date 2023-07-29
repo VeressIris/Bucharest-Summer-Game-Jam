@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +8,12 @@ public class Vomit : MonoBehaviour
     private float initPlayerSpeed;
     private PlayerController playerController;
     [SerializeField] private float slowDuration = 3f;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private float spawnPower = 2.5f;
 
     void Start()
     {
+        rb.AddForce(transform.right * spawnPower, ForceMode2D.Impulse);
         StartCoroutine(DelayedDespawn());
     }
 
@@ -32,7 +36,7 @@ public class Vomit : MonoBehaviour
 
     IEnumerator SlowPlayer()
     {
-        playerController.moveSpeed -= 1.75f;
+        playerController.moveSpeed = 5.25f;
         yield return new WaitForSeconds(slowDuration);
         playerController.moveSpeed = initPlayerSpeed;
     }
