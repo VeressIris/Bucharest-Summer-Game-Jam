@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
             if (horizontal != 0) anim.Play("Player Walk2");
             else anim.Play("Idle");
         }
+        else anim.Play("Jump");
 
         //face correct direction
         if (facingRight && horizontal < 0f) Flip();
@@ -62,7 +63,6 @@ public class PlayerController : MonoBehaviour
     {
         if (ctx.performed && IsGrounded())
         {
-            anim.Play("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 

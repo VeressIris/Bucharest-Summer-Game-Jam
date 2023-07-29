@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowDuration: 3
   rb: {fileID: 8186644976001331940}
-  spawnPower: 8.25
+  spawnPower: 7.85
   coll: {fileID: 1629008011721261295}
   playerLayer:
     serializedVersion: 2

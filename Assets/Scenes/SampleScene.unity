@@ -1010,11 +1010,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435229938}
   m_CullTransparentMesh: 1
---- !u!1 &467207985 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4950343109425446133, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-  m_PrefabInstance: {fileID: 6572820822165733031}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,7 +3030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3816994092391881124, guid: 9dc3567c2eb03bb428c4b1c14f4607ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.559
+      value: 2.059
       objectReference: {fileID: 0}
     - target: {fileID: 3816994092391881124, guid: 9dc3567c2eb03bb428c4b1c14f4607ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3078,63 +3073,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dc3567c2eb03bb428c4b1c14f4607ff, type: 3}
---- !u!1001 &6572820822165733031
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4950343109425446133, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_Name
-      value: Vomit puddle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.909
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7627403701092549032, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
 --- !u!1001 &7731071801930993848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3145,7 +3083,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4010823758828059615, guid: e69bcaeb0d6f135498b115e600cf80cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.75
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4010823758828059615, guid: e69bcaeb0d6f135498b115e600cf80cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3194,7 +3132,7 @@ PrefabInstance:
     - target: {fileID: 7806477503268351410, guid: e69bcaeb0d6f135498b115e600cf80cf, type: 3}
       propertyPath: vomitPrefab
       value: 
-      objectReference: {fileID: 467207985}
+      objectReference: {fileID: 4950343109425446133, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
     - target: {fileID: 7806477503268351410, guid: e69bcaeb0d6f135498b115e600cf80cf, type: 3}
       propertyPath: playerController
       value: 
@@ -3217,5 +3155,4 @@ SceneRoots:
   - {fileID: 1227289506}
   - {fileID: 777462823}
   - {fileID: 7731071801930993848}
-  - {fileID: 6572820822165733031}
   - {fileID: 1738046554044362349}
