@@ -30,12 +30,6 @@ public class MainMenuManager : MonoBehaviour
         levelSelectScreen.SetActive(true);
     }
 
-    //automate this?
-    public void SelectLevel(int lvl)
-    {
-        SceneManager.LoadScene(lvl);
-    }
-
     public void Back()
     {
         mainMenu.SetActive(true);
