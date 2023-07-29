@@ -190,6 +190,28 @@
                 },
                 {
                     "name": "",
+                    "id": "69b2e75a-2758-4c22-a83a-386530823481",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "083624e1-00a5-4cf7-9de0-863ddafbc75a",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "415b91de-a23e-4d4c-a51c-cf243b06a375",
                     "path": "<Keyboard>/escape",
                     "interactions": "",

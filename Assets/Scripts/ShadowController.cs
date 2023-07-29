@@ -48,7 +48,7 @@ public class ShadowController : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             CameraShake.Instance.ShakeCamera(4.15f, 0.1545f);
-            playerController.health--;
+            playerController.TakeDamage();
         }
     }
 }

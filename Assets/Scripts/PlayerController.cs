@@ -18,12 +18,19 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight = true;
 
-    [Header("Dying")]
+    [Header("Health")]
     public int health = 3;
+    [SerializeField] private GameObject[] hearts;
 
     void Start()
     {
         health = 3;
+
+        //make sure hearts are displayed
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            hearts[i].SetActive(true);
+        }
     }
 
     void Update()
@@ -70,5 +77,14 @@ public class PlayerController : MonoBehaviour
     public bool OnVomit()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, vomitLayer);
+    }
+
+    public void TakeDamage()
+    {
+        if (health > 0)
+        {
+            health--;
+            hearts[health].SetActive(false);
+        }
     }
 }

@@ -11,7 +11,7 @@ public class Puddle : MonoBehaviour
             CameraShake.Instance.ShakeCamera(4.15f, 0.1545f);
 
             PlayerController playerController = collision.gameObject.GetComponent<PlayerController>();
-            playerController.health--;
+            playerController.TakeDamage();
         }
     }
 }

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject healthBar;
 
     void Start()
     {
@@ -35,12 +36,16 @@ public class GameManager : MonoBehaviour
         if (!paused)
         {
             Time.timeScale = 0;
+            
             pauseMenu.SetActive(true);
+            healthBar.SetActive(false);
         }
         else
         {
             Time.timeScale = 1;
+
             pauseMenu.SetActive(false);
+            healthBar.SetActive(true);
         }
 
         paused = !paused;
@@ -50,5 +55,6 @@ public class GameManager : MonoBehaviour
     {
         gameOverScreen.SetActive(false);
         pauseMenu.SetActive(false);
+        healthBar.SetActive(true);
     }
 }
