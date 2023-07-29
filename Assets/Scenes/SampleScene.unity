@@ -272,7 +272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &359734310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 1276546831}
   - component: {fileID: 1276546834}
   - component: {fileID: 1276546835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1357,6 +1357,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  vomitLayer:
+    serializedVersion: 2
+    m_Bits: 64
   moveSpeed: 7
   jumpForce: 9
   health: 3

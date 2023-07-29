@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask vomitLayer;
 
     [Header("Movement")]
     public float moveSpeed = 8f;
@@ -64,5 +65,10 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext ctx)
     {
         horizontal = ctx.ReadValue<Vector2>().x;
+    }
+
+    public bool OnVomit()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, vomitLayer);
     }
 }
