@@ -39,8 +39,8 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
 
         //face correct direction
-        if (!facingRight && horizontal < 0f) Flip();
-        else if (facingRight && horizontal > 0f) Flip();
+        if (facingRight && horizontal < 0f) Flip();
+        else if (!facingRight && horizontal > 0f) Flip();
     }
 
     public bool IsGrounded()
