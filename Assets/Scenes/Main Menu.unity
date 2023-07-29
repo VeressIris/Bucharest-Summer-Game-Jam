@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Title
+  m_text: Tail Escape
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c6cc016d4c596340857bf88eef733bd, type: 2}
   m_sharedMaterial: {fileID: 6123630775520767147, guid: 5c6cc016d4c596340857bf88eef733bd, type: 2}
@@ -1840,7 +1840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1552608081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2502,7 +2502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1957253056
 RectTransform:
   m_ObjectHideFlags: 0

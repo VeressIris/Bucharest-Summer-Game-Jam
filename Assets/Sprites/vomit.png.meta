@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a5dcbba287ac10142ac97c717c5e46c0
+guid: ada8f77decabf4f4383499971ea4ccc8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,112 +147,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: building2_0
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 2025.6
-        height: 2880
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eded48131545264284ee81d3e47bff8
-      internalID: -879324058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: building2_1
-      rect:
-        serializedVersion: 2
-        x: 2137
-        y: 0
-        width: 2025.6
-        height: 2880
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 275ffb2da5f773549ad9619145785931
-      internalID: 1718377841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: building2_2
-      rect:
-        serializedVersion: 2
-        x: 4162
-        y: 0
-        width: 2025.6
-        height: 2880
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f9d4abd9caaddc40bba7e9aeea0750a
-      internalID: -1597197428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: building2_3
-      rect:
-        serializedVersion: 2
-        x: 6187
-        y: 0
-        width: 2025.6
-        height: 2880
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 782bfcd47def3934ea61b85b20ea9a61
-      internalID: -548405752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: building2_4
-      rect:
-        serializedVersion: 2
-        x: 8212
-        y: 0
-        width: 2025.6
-        height: 2880
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b99297409f9824d4690e3cec2c9feee2
-      internalID: 994222170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -263,12 +158,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      building2_0: -879324058
-      building2_1: 1718377841
-      building2_2: -1597197428
-      building2_3: -548405752
-      building2_4: 994222170
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
