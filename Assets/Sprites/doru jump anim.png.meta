@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 75a57ff2b796352429bc1398496f659b
+guid: 2b44bc0b33a4a0e448566c5927809891
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,6 +107,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -132,29 +145,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doru walk_0
+      name: doru jump anim_4
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 0
+        width: 2048
+        height: 2880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a87121cf80385f4cb8a331bb806a4c2
+      internalID: 1043786700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doru jump anim_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2560
+        width: 2048
         height: 2880
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,19 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ef962591f23aad43974da6ad22db7fe
-      internalID: 1872599478
+      spriteID: 8ff58d5fd5476db44add092ef69cd3b3
+      internalID: 79308161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doru walk_1
+      name: doru jump anim_1
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2048
         y: 0
-        width: 2560
+        width: 2048
         height: 2880
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,19 +205,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55349f7a204ddc64eb8257b74353e234
-      internalID: -1775083455
+      spriteID: e0237bd4dd3b4994ca3b4162c5f6b4c1
+      internalID: -1002993278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doru walk_2
+      name: doru jump anim_2
       rect:
         serializedVersion: 2
-        x: 5120
+        x: 4096
         y: 0
-        width: 2560
+        width: 2048
         height: 2880
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,19 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ba80ab35e7ff049828e51eb215d255
-      internalID: 583636015
+      spriteID: d7f40fe14b4d7564d95c01afabd097cb
+      internalID: 1974941653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doru walk_3
+      name: doru jump anim_3
       rect:
         serializedVersion: 2
-        x: 7680
+        x: 6144
         y: 0
-        width: 2560
+        width: 2048
         height: 2880
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -226,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aff31396487673f4887f5193ecbf53ce
-      internalID: 2043794800
+      spriteID: 4aa017ba8ee15b149be376b3fefaeb69
+      internalID: -1817899552
       vertices: []
       indices: 
       edges: []
@@ -243,10 +264,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      doru walk_0: 1872599478
-      doru walk_1: -1775083455
-      doru walk_2: 583636015
-      doru walk_3: 2043794800
+      doru jump anim_0: 79308161
+      doru jump anim_1: -1002993278
+      doru jump anim_2: 1974941653
+      doru jump anim_3: -1817899552
+      doru jump anim_4: 1043786700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
