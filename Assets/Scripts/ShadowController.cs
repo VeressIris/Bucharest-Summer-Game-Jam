@@ -26,7 +26,8 @@ public class ShadowController : MonoBehaviour
         }
         else if (playerController.health <= 0)
         {
-            Vector3 targetPos = new Vector3(player.transform.position.x - 3.65f, transform.position.y, player.transform.position.z);
+            xspeed = 3.75f;
+            Vector3 targetPos = new Vector3(player.transform.position.x - 3.5f, transform.position.y, player.transform.position.z);
             transform.position = Vector3.Lerp(transform.position, targetPos, xspeed * Time.deltaTime);
 
             Vector3 targetYPos = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
@@ -44,7 +45,7 @@ public class ShadowController : MonoBehaviour
         Vector3 targetYPos = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
         if (!playerController.IsGrounded())
         {
-            targetYPos = new Vector3(transform.position.x, player.transform.position.y - 0.85f, transform.position.z);
+            targetYPos = new Vector3(transform.position.x, player.transform.position.y - 1.3f, transform.position.z);
         }
         transform.position = Vector3.Slerp(transform.position, targetYPos, yspeed * Time.deltaTime);
     }
@@ -60,7 +61,7 @@ public class ShadowController : MonoBehaviour
 
     IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(0.45f);
         canStart = true;
     }
 }
