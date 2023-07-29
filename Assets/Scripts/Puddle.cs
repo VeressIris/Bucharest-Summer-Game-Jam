@@ -8,6 +8,8 @@ public class Puddle : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            CameraShake.Instance.ShakeCamera(4.15f, 0.1545f);
+
             PlayerController playerController = collision.gameObject.GetComponent<PlayerController>();
             playerController.health--;
         }
