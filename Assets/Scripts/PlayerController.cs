@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     public int health = 3;
     [SerializeField] private GameObject[] hearts;
 
+    [Header("Animation")]
+    [SerializeField] private Animator anim;
+
     void Start()
     {
         health = 3;
@@ -38,6 +41,13 @@ public class PlayerController : MonoBehaviour
         //move
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
 
+        //animate
+        if (IsGrounded())
+        {
+            if (horizontal != 0) anim.Play("Player Walk2");
+            else anim.Play("Idle");
+        }
+
         //face correct direction
         if (facingRight && horizontal < 0f) Flip();
         else if (!facingRight && horizontal > 0f) Flip();
@@ -52,6 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         if (ctx.performed && IsGrounded())
         {
+            anim.Play("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
@@ -76,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     public bool OnVomit()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, vomitLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, vomitLayer);
     }
 
     public void TakeDamage()

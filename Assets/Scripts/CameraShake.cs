@@ -19,6 +19,11 @@ public class CameraShake : MonoBehaviour
         cbmp = virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
+    void Start()
+    {
+        cbmp.m_AmplitudeGain = 0f; //make sure the cam doesn't shake on load
+    }
+
     public void ShakeCamera(float intensity, float time)
     {
         cbmp.m_AmplitudeGain = intensity;
