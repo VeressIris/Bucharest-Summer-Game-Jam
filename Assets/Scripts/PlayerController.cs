@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 8f;
+    public float moveSpeed = 8f;
     [SerializeField] private float jumpForce = 16f;
     private float horizontal;
 

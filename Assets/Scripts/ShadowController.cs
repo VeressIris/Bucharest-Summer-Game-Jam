@@ -30,17 +30,24 @@ public class ShadowController : MonoBehaviour
 
     void FollowPlayer()
     {
+        //follow player on X axis
         Vector3 targetXPos = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetXPos, xspeed * Time.deltaTime);
 
+        //follow player on Y axis
         Vector3 targetYPos = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
-        transform.position = Vector3.Lerp(transform.position, targetYPos, yspeed * Time.deltaTime);
+        if (!playerController.IsGrounded())
+        {
+            targetYPos = new Vector3(transform.position.x, player.transform.position.y - 0.85f, transform.position.z);
+        }
+        transform.position = Vector3.Slerp(transform.position, targetYPos, yspeed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
+            //add shake
             Debug.Log("DAMAGE");
             playerController.health--;
         }
