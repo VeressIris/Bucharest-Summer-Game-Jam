@@ -27,17 +27,6 @@ public class Vomit : MonoBehaviour
         StartCoroutine(DelayedDespawn());
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Player"))
-    //    {
-    //        playerController = collision.gameObject.GetComponent<PlayerController>();
-    //        initPlayerSpeed = playerController.moveSpeed;
-
-    //        StartCoroutine(SlowPlayer());
-    //    }
-    //}
-
     private void Update()
     {
         if (playerController.OnVomit() && !playerSlowed)
@@ -49,7 +38,7 @@ public class Vomit : MonoBehaviour
 
     IEnumerator DelayedDespawn()
     {
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(8.25f);
         Destroy(gameObject);
     }
 
