@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6833884704673708664}
   - component: {fileID: 1945549988603349952}
   - component: {fileID: 6964195745706975534}
-  - component: {fileID: -3590076011530086474}
+  - component: {fileID: 7369614388716370198}
   m_Layer: 3
   m_Name: buildings_2
   m_TagString: Despawnable
@@ -163,7 +163,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18.95, y: 15.766888}
   m_EdgeRadius: 0
---- !u!114 &-3590076011530086474
+--- !u!114 &7369614388716370198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
