@@ -11,7 +11,7 @@ public class ShadowController : MonoBehaviour
     [Header("Player")]
     [SerializeField] private GameObject player;
     [SerializeField] private PlayerController playerController;
-    private bool canStart = false;
+    [HideInInspector] public bool canMove = false;
 
     void Start()
     {
@@ -20,18 +20,21 @@ public class ShadowController : MonoBehaviour
 
     void Update()
     {
-        if (playerController.health > 0 && canStart)
+        if (canMove)
         {
-            FollowPlayer();
-        }
-        else if (playerController.health <= 0)
-        {
-            xspeed = 3.75f;
-            Vector3 targetPos = new Vector3(player.transform.position.x - 3.5f, transform.position.y, player.transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, targetPos, xspeed * Time.deltaTime);
+            if (playerController.health > 0)
+            {
+                FollowPlayer();
+            }
+            else if (playerController.health <= 0)
+            {
+                xspeed = 3.75f;
+                Vector3 targetPos = new Vector3(player.transform.position.x - 3.5f, transform.position.y, player.transform.position.z);
+                transform.position = Vector3.Lerp(transform.position, targetPos, xspeed * Time.deltaTime);
 
-            Vector3 targetYPos = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, targetYPos, yspeed * Time.deltaTime);
+                Vector3 targetYPos = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
+                transform.position = Vector3.Lerp(transform.position, targetYPos, yspeed * Time.deltaTime);
+            }
         }
     }
 
@@ -62,6 +65,6 @@ public class ShadowController : MonoBehaviour
     IEnumerator StartCountdown()
     {
         yield return new WaitForSeconds(0.45f);
-        canStart = true;
+        canMove = true;
     }
 }

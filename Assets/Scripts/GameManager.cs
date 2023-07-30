@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject healthBar;
+    [SerializeField] private GameObject completedLevelScreen;
+    [SerializeField] private GameObject winScreen;
 
     void Start()
     {
@@ -57,6 +59,9 @@ public class GameManager : MonoBehaviour
         gameOverScreen.SetActive(false);
         pauseMenu.SetActive(false);
         healthBar.SetActive(true);
+        completedLevelScreen.SetActive(false);
+        
+        if (winScreen != null) winScreen.SetActive(false);
     }
 
     public void Retry()
@@ -67,5 +72,10 @@ public class GameManager : MonoBehaviour
     public void QuitToMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
