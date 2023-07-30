@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Health")]
     public int health = 3;
-    [SerializeField] private GameObject[] hearts;
+    public GameObject[] hearts;
 
     [Header("Animation")]
     [SerializeField] private Animator anim;

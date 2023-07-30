@@ -59,8 +59,8 @@ public class GameManager : MonoBehaviour
         gameOverScreen.SetActive(false);
         pauseMenu.SetActive(false);
         healthBar.SetActive(true);
-        completedLevelScreen.SetActive(false);
         
+        if (completedLevelScreen != null) completedLevelScreen.SetActive(false);
         if (winScreen != null) winScreen.SetActive(false);
     }
 

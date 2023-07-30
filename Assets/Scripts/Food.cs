@@ -12,7 +12,11 @@ public class Food : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (playerController.health < 3) playerController.health++;
+            if (playerController.health < 3) 
+            {
+                playerController.hearts[playerController.health].SetActive(true);
+                playerController.health++;
+            }
 
             Instantiate(vomitPrefab, player.transform.position, transform.rotation);
 

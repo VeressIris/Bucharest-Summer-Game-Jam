@@ -20,7 +20,7 @@ public class FinishLine : MonoBehaviour
             shadow.GetComponent<ShadowController>().canMove = false;
             StartCoroutine(FadeOutShadow());
 
-            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
+            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 2) //-2 bc last index is the infinite runner mode
             {
                 winScreen.SetActive(true);
             }
