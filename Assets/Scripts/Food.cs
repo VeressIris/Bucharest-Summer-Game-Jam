@@ -18,7 +18,7 @@ public class Food : MonoBehaviour
                 playerController.health++;
             }
 
-            Instantiate(vomitPrefab, player.transform.position, transform.rotation);
+            Instantiate(vomitPrefab, transform.position, transform.rotation);
 
             Destroy(gameObject);
         }
