@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: evil doru_0
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 2794
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7c01822896e514e9be1ede307428fa
+      internalID: 726281004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_1
+      rect:
+        serializedVersion: 2
+        x: 4403
+        y: 2778
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0729f63d56e2a94418a18a799477b80b
+      internalID: 19498201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_2
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2748
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625e2f6da9958b14798c425a9b324036
+      internalID: -973319954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_3
+      rect:
+        serializedVersion: 2
+        x: 4143
+        y: 1173
+        width: 1949
+        height: 1579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f182109e721595f419ea395ac159f086
+      internalID: 1993503789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_4
+      rect:
+        serializedVersion: 2
+        x: 8908
+        y: 2748
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11c8fec856f65f4188ffe146766463b
+      internalID: -1011869696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_5
+      rect:
+        serializedVersion: 2
+        x: 6323
+        y: 2503
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8f3a536a81f444c8bff154333de149
+      internalID: -1406435217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_6
+      rect:
+        serializedVersion: 2
+        x: 6149
+        y: 2393
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd15329939c1404ebb2b40022295db4
+      internalID: 49588136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_7
+      rect:
+        serializedVersion: 2
+        x: 6218
+        y: 933
+        width: 1794
+        height: 1544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31390c71a2fba54da0f2652061afb7d
+      internalID: 1064197426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_8
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 2328
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409bbbea9de67b047b47526eef289d10
+      internalID: -1817323816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2278
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66280ca628f0e734496988e299b45d87
+      internalID: 2104356497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_10
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 698
+        width: 1859
+        height: 1604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4c75f13785bc0418d455f1fbc7692e
+      internalID: 1230587369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_11
+      rect:
+        serializedVersion: 2
+        x: 8458
+        y: 2278
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed1ee778a07450468cee957cf8c50f5
+      internalID: 725502144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_12
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2209
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6725f74a93693a544a53aab38de9c14e
+      internalID: 2011341419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_13
+      rect:
+        serializedVersion: 2
+        x: 8589
+        y: 2209
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186fa91334a06f049979701ea049b5a1
+      internalID: -1972533463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 768
+        width: 1784
+        height: 1369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ae19dd542b9d34fb1d591e4f13d7f2
+      internalID: -1876835988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_15
+      rect:
+        serializedVersion: 2
+        x: 8178
+        y: 2115
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce1b17eaa0e42d4394a67d619fa1ef9
+      internalID: -2071487883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_16
+      rect:
+        serializedVersion: 2
+        x: 8398
+        y: 743
+        width: 1699
+        height: 1404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722d01fa6346573479884e9bd166476e
+      internalID: 1972414715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_17
+      rect:
+        serializedVersion: 2
+        x: 4134
+        y: 1938
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b643d3156992f428219a74cf474ab4
+      internalID: -768921832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evil doru_18
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1889
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc291d94c73500479c95161ee63d1db
+      internalID: 1499701798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +557,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      evil doru_0: 726281004
+      evil doru_1: 19498201
+      evil doru_10: 1230587369
+      evil doru_11: 725502144
+      evil doru_12: 2011341419
+      evil doru_13: -1972533463
+      evil doru_14: -1876835988
+      evil doru_15: -2071487883
+      evil doru_16: 1972414715
+      evil doru_17: -768921832
+      evil doru_18: 1499701798
+      evil doru_2: -973319954
+      evil doru_3: 1993503789
+      evil doru_4: -1011869696
+      evil doru_5: -1406435217
+      evil doru_6: 49588136
+      evil doru_7: 1064197426
+      evil doru_8: -1817323816
+      evil doru_9: 2104356497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

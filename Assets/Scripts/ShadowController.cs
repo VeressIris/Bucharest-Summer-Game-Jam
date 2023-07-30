@@ -13,6 +13,10 @@ public class ShadowController : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     [HideInInspector] public bool canMove = false;
 
+    [Header("Anim")]
+    [SerializeField] private Animator anim;
+
+
     void Start()
     {
         StartCoroutine(StartCountdown());
@@ -28,6 +32,8 @@ public class ShadowController : MonoBehaviour
             }
             else if (playerController.health <= 0)
             {
+                anim.Play("Idle");
+                
                 xspeed = 3.75f;
                 Vector3 targetPos = new Vector3(player.transform.position.x - 3.5f, transform.position.y, player.transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, targetPos, xspeed * Time.deltaTime);
@@ -49,7 +55,10 @@ public class ShadowController : MonoBehaviour
         if (!playerController.IsGrounded())
         {
             targetYPos = new Vector3(transform.position.x, player.transform.position.y - 1.3f, transform.position.z);
+            anim.Play("Shadow Jump");
         }
+        else anim.Play("Shadow Walk");
+
         transform.position = Vector3.Slerp(transform.position, targetYPos, yspeed * Time.deltaTime);
     }
 
