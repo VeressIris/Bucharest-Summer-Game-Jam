@@ -33,6 +33,7 @@ public class FinishLine : MonoBehaviour
 
     IEnumerator FadeOutShadow()
     {
+        yield return new WaitForSeconds(0.75f);
         shadowAnim.Play("Fade out");
         yield return new WaitForSeconds(1.25f);
         Destroy(shadow);

@@ -4015,6 +4015,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1106323584}
     - target: {fileID: 1942607380794217111, guid: 7a3d102e129edb348b7e0a0f86003423, type: 3}
+      propertyPath: xspeed
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1942607380794217111, guid: 7a3d102e129edb348b7e0a0f86003423, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1106323589}
