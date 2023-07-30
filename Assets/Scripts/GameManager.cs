@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject healthBar;
     [SerializeField] private GameObject completedLevelScreen;
     [SerializeField] private GameObject winScreen;
+    [SerializeField] private GameObject score;
+    [SerializeField] private TMP_Text scoreText;
+    private float rawScore = 0;
 
     void Start()
     {
@@ -32,6 +36,10 @@ public class GameManager : MonoBehaviour
             playerInput.enabled = false;
             gameOverScreen.SetActive(true);
         }
+        else
+        {
+            UpdateScore();
+        }
     }
 
     public void PauseResume()
@@ -42,6 +50,8 @@ public class GameManager : MonoBehaviour
             
             pauseMenu.SetActive(true);
             healthBar.SetActive(false);
+
+            if (score != null) score.SetActive(false);
         }
         else
         {
@@ -49,6 +59,8 @@ public class GameManager : MonoBehaviour
 
             pauseMenu.SetActive(false);
             healthBar.SetActive(true);
+
+            if (score != null) score.SetActive(true);
         }
 
         paused = !paused;
@@ -62,6 +74,7 @@ public class GameManager : MonoBehaviour
         
         if (completedLevelScreen != null) completedLevelScreen.SetActive(false);
         if (winScreen != null) winScreen.SetActive(false);
+        if (score != null) score.SetActive(true);
     }
 
     public void Retry()
@@ -77,5 +90,14 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    private void UpdateScore()
+    {
+        if (score != null)
+        {
+            rawScore += Time.deltaTime * 10;
+            scoreText.text = rawScore.ToString("0");
+        }
     }
 }
