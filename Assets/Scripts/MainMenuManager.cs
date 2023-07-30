@@ -35,4 +35,9 @@ public class MainMenuManager : MonoBehaviour
         mainMenu.SetActive(true);
         levelSelectScreen.SetActive(false);
     }
+
+    public void PlayInfiniteRunnerMode()
+    {
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+    }
 }
