@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vomitPrefab: {fileID: 4950343109425446133, guid: 4ed30020a0714b54e94bf3029e7f6b90, type: 3}
-  playerController: {fileID: 0}
-  player: {fileID: 0}
+  playerController: {fileID: 5547910122302270465, guid: 6338854195ab4fb47ad90dda74d8d801, type: 3}
+  player: {fileID: 5732763371140093451, guid: 6338854195ab4fb47ad90dda74d8d801, type: 3}
